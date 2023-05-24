@@ -1,0 +1,206 @@
+html{height: 100%;}
+*{  margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+    position: relative;
+     min-height: 100vh;
+
+
+}
+header{
+    width: 100%;
+    margin: 0px;
+    position: relative;
+    height: auto;
+    background-color: #86ac41;
+
+} 
+main{
+    position: relative;
+
+
+
+
+}
+footer{
+background-color: rgb(145, 126, 65);
+position: absolute;
+bottom: 0;
+width: 100%;
+height:3 em;
+margin:auto;
+}
+
+
+nav{                         
+    background-color: #324851;
+  }
+  input {                        
+    display: none;     
+  }
+  label {                       
+      display:none;
+  }
+  ul{                           
+    display: flex;
+    justify-content:space-around;
+    margin-top:0;
+    padding: 0;
+  }
+
+  li {                     
+    display: block;
+    background: lightgrey;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+    width: 200px;
+    text-align: center;
+  }
+  
+  
+  li:hover {                        
+    filter: brightness(110%);
+  }
+  
+  
+  
+  
+.TituloPrincipal{
+text-align: center;
+}
+.contenedor{
+    margin: 0 auto;
+ 
+}
+
+.imgpresentacion{
+   width: 50%;
+   margin-top: 20px;
+   border-radius: 20px; 
+   box-shadow: 10px 10px 5px rgb(90, 91, 91);
+}
+
+.contenedorflex{
+    display: flex;
+    justify-content:space-around;
+    
+} 
+.cajaintegrante{
+    background-color: rgb(229, 188, 41);
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow:10px 10px 5px rgb(90, 91, 91);
+    text-align: center;
+
+}
+.fotointegrante{
+    width: 100%;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+
+} 
+.NombreIntegrante{
+ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    color: red;
+    text-align: center;
+    
+    
+
+}
+.info{
+    width: 75%;
+    height: auto;
+    background-color: #324851;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+.info .tituloseccion{
+    color: #fff8f0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px #fff8f0 solid;
+}
+.info .titulodatos{
+    color: #fff8f0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display: inline;
+    margin-right: 20px;
+    font-family: arial;
+}
+.info .datosdatos{
+    color: rgb(253, 253, 253);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display: inline;
+}
+
+@media all and (max-width: 700px) {  
+  
+    input:checked  ~ ul{   
+    display:block;
+      }
+  
+      input:checked ~ label {   
+      background: lightgrey; 
+          }
+  
+      label:hover{                
+      background: grey;
+      }
+  
+    li{                         
+         margin: 0px;
+         text-align: left;
+     }
+  
+     label {                      
+       box-sizing: border-box;
+       display: block;
+       border: 1px solid black;
+       border-radius: 5px;
+       width: 30px;
+       height: 30px;
+       line-height: 30px;
+       font-weight: bold;
+       text-align: center;
+       user-select: none;
+       background-color: cadetblue;
+  
+        }
+      
+  
+    ul{                          
+       display: none;
+       background-color:white;
+  
+      }
+     .contenedorflex{
+        flex-direction: column;
+        justify-content: center;
+     }  
+  }
+  ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  ul li a:hover{
+    color: rgb(6,204,253);
+  }
